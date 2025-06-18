@@ -7,7 +7,13 @@
     "light": "#0f172a",
     "dark": "#0f172a"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
+  "contextual": {
+    "options": [
+      "copy",
+      "view"
+    ]
+  },
   "navigation": {
     "tabs": [
       {
@@ -24,12 +30,10 @@
           {
             "group": "Essentials",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "essentials/projects",
+              "essentials/ambient-chat",
+              "essentials/local",
+              "essentials/import"
             ]
           }
         ]
