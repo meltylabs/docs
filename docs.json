@@ -4,8 +4,8 @@
   "name": "Chorus Docs",
   "colors": {
     "primary": "#ca8a04",
-    "light": "#0f172a",
-    "dark": "#0f172a"
+    "light": "#ca8a04",
+    "dark": "#ca8a04"
   },
   "favicon": "/favicon.png",
   "navigation": {
