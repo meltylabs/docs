@@ -8,12 +8,6 @@
     "dark": "#0f172a"
   },
   "favicon": "/favicon.png",
-  "contextual": {
-    "options": [
-      "copy",
-      "view"
-    ]
-  },
   "navigation": {
     "tabs": [
       {
@@ -24,16 +18,23 @@
             "pages": [
               "index",
               "installation",
-              "introduction"
+              "basics",
+              "faq"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Core Features",
             "pages": [
-              "essentials/projects",
-              "essentials/ambient-chat",
-              "essentials/local",
-              "essentials/import"
+              "core/projects",
+              "core/ambient-chat",
+              "core/local",
+              "core/import"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "settings/byok"
             ]
           }
         ]
