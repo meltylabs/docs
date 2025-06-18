@@ -25,6 +25,8 @@
           {
             "group": "Core Features",
             "pages": [
+              "core/multiple-models",
+              "core/tools",
               "core/projects",
               "core/ambient-chat",
               "core/local",
