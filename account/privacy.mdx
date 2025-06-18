@@ -1,0 +1,58 @@
+---
+title: 'Privacy'
+description: 'What we do (and don’t) with your data'
+icon: 'shield'
+---
+
+## What data do we use?
+
+We don’t look at your chats, and we don’t want to. Your chats are between you and your AI. We make money from a subscription rather than selling your data.
+We ask model providers like OpenAI and Anthropic not to train their models on your data.
+
+We do collect analytics data, like what features you use, crash logs, etc. This helps us fix bugs and learn what parts of Chorus to improve.
+
+## Where do you store my chats?
+
+Your chat history is saved locally in the Application Support directory `~/Library/Application\ Support/sh.chorus.app`. None of it is stored on our servers.
+
+## What types of data does Chorus collect?
+
+Most app data is stored locally on your computer in the Application Support directory.
+Here's what we store elsewhere.
+In an encrypted Postgres database served by Fly, we store
+- Your account data (such as your email address and plan)
+- Message metadata (such as creation time, which model it was sent to, length, number of tokens)
+
+We store analytics data in [PostHog](https://posthog.com) when an event occurs in the app, such as
+- You create a chat, select a model, or send a message (including metadata like which model was involved and which app features you’re using)
+- A model decides to use a tool (including the name of the tool)
+- A model provider returns an error (including the error message)
+- You apply a revision (including which model generated it)
+- An unexpected error occurs (including the error message and stack trace)
+
+<Note>
+If you're on the Enterprise plan, we can toggle analytics off. Just email us at [founders@chorus.sh](mailto:founders@chorus.sh).
+</Note>
+
+PostHog stores data about your computer, like your OS and IP address.
+We don't capture or store any session recordings.
+
+## What data do the model providers collect? Are my messages used for training?
+
+Where possible, we ask model providers not to train their models on your data. You can find the privacy policies of our main model providers here:
+- [OpenAI](https://openai.com/policies/row-privacy-policy/)
+- [Anthropic](https://www.anthropic.com/legal/privacy)
+- [Gemini](https://support.google.com/gemini/answer/13594961?hl=en#privacy_notice)
+- [xAI](https://x.ai/legal/privacy-policy)
+- [OpenRouter](https://openrouter.ai/privacy)
+
+## How does Ambient Chat work? Can it see my screen at all times?
+
+Chorus can only see your screen if you explicitly grant screen-recording permissions in your Mac’s Privacy & Security settinsg.
+Even once you grant screen-recording permissions, Chorus only captures your screen when you turn on “Vision Mode.” Whenever Vision Mode is enabled, you'll see a big orange indicator.
+If you’ve granted screen-recording permissions and enabled vision mode, then whenever you send a message, Chorus will take a screenshot of your entire screen and send it to the model provider. The screenshot is not stored on our servers.
+When Vision Mode is disabled, no screenshots are created.
+
+## Is my data encrypted? Who can access my data?
+
+Any data we store (like your email and message metadata) is encrypted in a Fly Postgres database or on PostHog’s servers (both SOC 2 compliant). It can be accessed only by Melty employees. 

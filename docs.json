@@ -36,6 +36,13 @@
             "pages": [
               "settings/byok"
             ]
+          },
+          {
+            "group": "Account",
+            "pages": [
+              "account/dashboard",
+              "account/privacy"
+            ]
           }
         ]
       }
