@@ -8,7 +8,7 @@ icon: 'robot'
 
 ## When to Use Multiple Models 
 
-One of Chorus's core features is the ability to have multiple models respond to your messages. This also allows you to gather a variety of opinions and perspectives in response to a single message, while also reducing the risk of single point of failure hallucinations. 
+In Chorus, you can configure multiple models to respond to your messages. This enables you to gather a variety of opinions and perspectives in response to a single message, while also reducing the effects of a single model hallucinating. 
 
 At Chorus, our staff almost always uses multiple models in a single chat. Here's a short video with more on how we use multiple models: 
 
@@ -16,8 +16,24 @@ TODO: video
 
 ## How to Use Multiple Models 
 
-To use multiple models in a chat, simply press <kbd>⌘</kbd> + <kbd>J</kbd> to open the model selector.
+To use multiple models in a chat, simply click the model names in the message composer, or press <kbd>⌘</kbd> + <kbd>J</kbd> to open the model selector.
 
-From there, you can select as many models as you'd like to respond to your message. 
+From there, you can select as many models as you'd like to respond to your message - there's no limit.
 
 You can also re-arrange the order of the models by drag and dropping the pills at the top of the dialog. 
+
+TODO: gif 
+
+If you've already sent a message, you can add a model to respond to your existing message by clicking the `Add` button in the row of responses. 
+
+TODO: gif 
+
+### How to Manage Your Chat Context 
+
+One natural question is what happens to the chat context when you have multiple models responding to your message. 
+
+In Chorus, you can select which response is `In Chat`, meaning it will be added to the chat context. Future rounds of conversation will be able to see only the answer you selected. 
+
+By default, responses from the first model you selected will be marked as `In Chat`. To mark a different response as `In Chat`, simply click on that response's box. 
+
+TODO: gif 

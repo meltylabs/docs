@@ -1,24 +1,30 @@
 ---
 title: 'Tools'
-description: 'Use tools to extend the capabilities of your AI'
+description: 'Use tools to extend the capabilities of your AIs'
 icon: 'wrench'
 ---
 
 <img src="/images/tools-picker.png" alt="Tools" />
 
+## What are Tools? 
+
+Tools are, simply, a gamechanger for how you use AI. 
+
+They allow AI models to perform actions like searching the web, running terminal commands, or interacting with APIs. 
+
+In Chorus, tools are analogous to **MCPs**. 
+
 ## When to Use Tools 
 
-In Chorus, **tools** are features that extend the AI's capabilities beyond just text generation. They allow AI models to perform actions like searching the web, running terminal commands, or interacting with APIs. 
-
-You should reach for tools in Chorus when you anticipate the AI needing to take actions beyond just text generation - searching the web for up to date information, getting data from a third-party, or reading a local file, for example. 
+If it feels like you need access to data outside of what the AI already knows, reach for tools. For example, searching the web for current stock prices, pulling in data from a third-party like Stripe, or reading a local file. 
 
 We're constantly experimenting with tool usage at Chorus. Here's a short video with more on how we use them: 
 
-TODO: video
+TODO: video 
 
 ## How to Use Tools 
 
-To use tools in a chat, simply press <kbd>⌘</kbd> + <kbd>T</kbd> to open the tool selector.
+To use tools in a chat, simply click the `Tools` button in the message composer, or press <kbd>⌘</kbd> + <kbd>T</kbd> to open the tool selector.
 
 From there, you can select the tool(s) you'd like to enable. 
 
@@ -26,21 +32,25 @@ From there, you can select the tool(s) you'd like to enable.
     Just because a tool is available doesn't mean it will be used. The AI will only use tools if it feels it's necessary to do so. 
 </Note>
 
-## Tool Features 
+TODO: gif 
 
-## Built-in Tools 
+### How to Enable More Tools 
 
-Chorus comes with a few built-in tools that you will always see in the UI, such as web search and terminal access. 
+Chorus comes with a few built-in tools that can enable by selecting the `Add Built-in MCP` button in the tools picker or by going to `Settings` -> `Connections`.
 
-## Custom Tools 
+These tools require little to not setup to get started with. 
 
-You can add a custom tool to Chorus by selecting `Add Custom MCP` from the tools picker, or by going to `Settings` -> `Connections`. 
+TODO: gif 
 
-At this point, we should that **tools** are Chorus's way of presenting **MCPs**. You can add a custom **local** or **remote** MCP to Chorus
-by using the `Add Local|Remote MCP` button in the `Connections` section of the settings. 
+### How to Integrate Custom Tools 
 
-<img src="/images/connections.png" alt="Connections" />
+You can also add a custom **local** or **remote** MCP to Chorus by clicking `Add Remote MCP` or `Add Local MCP` in settings. 
 
-Once you follow the on-screen prompts, you'll be able to run the MCP. 
+Once you follow the on-screen prompts, you'll be able to run your custom MCP. 
 
-yada yada yada this section could use some work 
+<Note>
+    If you're using a remote MCP, you'll need to run `mcp-remote` locally to form a connection for Chorus to use. 
+    You can find the `mcp-remote` binary in the `mcp-remote` directory of your Chorus installation. 
+</Note>
+
+TODO: gif 
