@@ -1,50 +1,48 @@
 ---
-title: 'Ambient Chat'
-description: 'Chat with an AI anywhere on your Mac'
-icon: 'expand'
+title: "Ambient Chat"
+description: "Chat with an AI anywhere on your Mac"
+icon: "expand"
 ---
 
 <video
-  style={{ borderRadius: '0.5rem' }}
-  src="/images/ambient.mp4"
-  autoPlay
-  loop
-  muted
-  playsInline
+    style={{ borderRadius: "0.5rem" }}
+    src="/images/ambient.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
 />
 
-## When to Use Ambient Chat 
+Ambient chat gets you quick answers while you're working in other apps. It's especially useful if you want to quickly share your screen with an AI.
 
-Ambient chat is a great way to get quick answers to questions while you're working in other apps. It's especially useful if you want to quickly share your screen with an AI.
+To create a new Ambient Chat, press <kbd>Option</kbd> + <kbd>Space</kbd>.
 
-Here's a piece of inspiration from one of our users:
+Here's how one Chorus user makes use of Ambient Chat:
 
-> I decided to use Chorus as I read through a new research paper. This time, I felt the value of Chorus significantly more. Being able to chat with the LLM and research into specific elements of the paper without needing to copy and paste or change tabs was a fluid experience. The minimal UI of the ambient window blended in perfectly and didn't distract me from my reading. 
+> I decided to use Chorus as I read through a new research paper. [...] Being able to chat with the LLM and research into specific elements of the paper without needing to copy and paste or change tabs was a fluid experience. The minimal UI of the ambient window blended in perfectly and didn't distract me from my reading.
 
-And here's a short video on how we use Ambient Chat at Chorus: 
+## Sharing your screen
+
+Vision mode lets Chorus see your screen, by including a screenshot of your screen
+every time you send a message.
+
+Vision mode is OFF by default. To enable vision mode, press <kbd>⌘</kbd> + <kbd>I</kbd>. You'll see the eye open, and this indicator will appear:
+
+<img src="/images/ambient-enabled.png" alt="Ambient Chat Vision Mode" />
+
+If you want to use vision mode, you'll need to grant Chorus screen-recording
+permissions. Vision mode is totally optional.
+
+TODO: working image of chat
 
 <video
-  style={{ borderRadius: '0.5rem' }}
-  src="https://video.twimg.com/ext_tw_video/1887546925119152128/pu/vid/avc1/1112x720/AdiBVG2Y9pyTlmBI.mp4?tag=12"
-  controls
-  playsInline
+    style={{ borderRadius: "0.5rem" }}
+    src="https://video.twimg.com/ext_tw_video/1887546925119152128/pu/vid/avc1/1112x720/AdiBVG2Y9pyTlmBI.mp4?tag=12"
+    controls
+    playsInline
 />
 
-## Creating Your First Ambient Chat
-
-To create a new Ambient Chat, first press <kbd>Option</kbd> + <kbd>Space</kbd>. 
-
-Then, press <kbd>⌘</kbd> + <kbd>I</kbd> to enable vision mode to share your screen with Chorus. 
-
-<Note>
-  You'll need to grant Chorus permission to access your screen to use Vision Mode. This step is entirely optional.
-</Note>
-
-Now, you're ready to chat anywhere on your Mac! Type your message and press enter. The AI will respond to your message.
-
-TODO: working image of chat 
-
-### How to Configure the Ambient Chat Shortcut 
+### Configuring the Ambient Chat shortcut
 
 By default, Ambient Chat opens with <kbd>Option</kbd> + <kbd>Space</kbd>, but you can change it to any shortcut you like.
 
@@ -52,31 +50,26 @@ Open settings with <kbd>⌘</kbd> + <kbd>,</kbd>, or by clicking the settings ic
 
 <img src="/images/ambient-settings.png" alt="Ambient Chat Settings" />
 
-### How to Share your Screen with Chorus 
-
-Vision mode includes a screenshot of your screen every time you send a message, and is OFF by default.
-
-To enable it, press <kbd>⌘</kbd> + <kbd>I</kbd> while Ambient Chat is open. You'll see the eye open.
-
-<img src="/images/ambient-enabled.png" alt="Ambient Chat Vision Mode" />
-
-### How to Open Chats in the Main window
+### Continuing in the main window
 
 If you'd like to open a chat in your main Chorus window, press <kbd>⌘</kbd> + <kbd>O</kbd> while Ambient Chat is open.
 
-You can access your full history of ambient chats by clicking the drawer icon in the bottom left of the main Chorus window. 
+You can access your full history of ambient chats by clicking the drawer icon in the bottom left of the main Chorus window.
 
 <img src="/images/ambient-drawer.png" alt="Ambient Chat Drawer" />
-
 
 ## FAQ
 
 <AccordionGroup>
     <Accordion title="Can I turn off Vision Mode?">
-        Yes, you can turn off Vision Mode by pressing <kbd>⌘</kbd> + <kbd>I</kbd> while Ambient Chat is open. You'll see the eye closed.
-        If you're on the organization plan and would like to turn off Vision Mode for all team members, we can do that — just email us at [founders@chorus.sh](mailto:founders@chorus.sh).
+        Yes, you can turn off Vision Mode by pressing <kbd>⌘</kbd> +{" "}
+        <kbd>I</kbd> while Ambient Chat is open. You'll see the eye closed. If
+        you're on the team plan and would like to turn off Vision Mode for all
+        team members, email us at
+        [founders@chorus.sh](mailto:founders@chorus.sh).
     </Accordion>
     <Accordion title="Are my screen contents private?">
-        Yes, your screen contents are private. Screenshots are only sent to the AI provider and are not stored on our servers.
+        Yes, your screen contents are private. Screenshots are only sent to the
+        AI provider and are not stored on our servers.
     </Accordion>
 </AccordionGroup>
