@@ -21,8 +21,9 @@
                         "group": "Core Features",
                         "pages": [
                             "core/multiple-models",
-                            "core/tools",
                             "core/projects",
+                            "core/tools",
+                            "core/mcp",
                             "core/ambient-chat",
                             "core/local"
                         ]
