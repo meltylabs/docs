@@ -8,21 +8,42 @@ icon: 'wrench'
 
 ## What are Tools? 
 
-Tools are, simply, a gamechanger for how you use AI. 
+
+Tools are a powerful way to extend AI's abilities.
 
 They allow AI models to perform actions like searching the web, running terminal commands, or interacting with APIs. 
 
 In Chorus, tools are analogous to **MCPs**. 
 
+<video src="https://meltylabs.fly.storage.tigris.dev/ChorusTools.mp4" controls autoplay muted loop alt="Tools" className="rounded-xl" />
+
+Out of the box, Chorus has access to:
+
+- Web: search the web for information
+- Terminal: run terminal commands
+- Image Generator: generate images with `gpt-image-1`
+- GitHub: manage repos, code, issues, and PRs
+
 ## When to Use Tools 
 
-If it feels like you need access to data outside of what the AI already knows, reach for tools. For example, searching the web for current stock prices, pulling in data from a third-party like Stripe, or reading a local file. 
+Use tools when you want the AI to have access to external data or APIs. For example, searching the web for current stock prices, pulling in data from a third-party like Stripe, or reading a local file. 
 
 We're constantly experimenting with tool usage at Chorus. Here's a short video with more on how we use them: 
 
-TODO: video 
+For example, you can use the `Web` and `Terminal` tools in combination to search the web and download information. 
 
-## How to Use Tools 
+<video src="https://meltylabs.fly.storage.tigris.dev/ChorusTweet.mp4" controls alt="Web and Terminal" className="rounded-xl" />
+
+Or the `GitHub` tool to manage your GitHub repos, code, issues, and PRs:
+
+<video src="https://meltylabs.fly.storage.tigris.dev/ChorusGithub.mp4" controls alt="GitHub" className="rounded-xl" />
+
+Or the `replicate` custom MCP to generate images:
+
+<video src="https://meltylabs.fly.storage.tigris.dev/ChorusReplicate.mp4" controls alt="Replicate" className="rounded-xl" />
+
+
+## How to Use Tools
 
 To use tools in a chat, simply click the `Tools` button in the message composer, or press <kbd>⌘</kbd> + <kbd>T</kbd> to open the tool selector.
 
@@ -32,17 +53,17 @@ From there, you can select the tool(s) you'd like to enable.
     Just because a tool is available doesn't mean it will be used. The AI will only use tools if it feels it's necessary to do so. 
 </Note>
 
-TODO: gif 
+<img src="/images/tools.png" alt="Tools" />
 
-### How to Enable More Tools 
 
-Chorus comes with a few built-in tools that can enable by selecting the `Add Built-in MCP` button in the tools picker or by going to `Settings` -> `Connections`.
 
-These tools require little to not setup to get started with. 
+### How to Integrate Custom Tools / Local or Remote MCPs 
 
-TODO: gif 
+MCPs are easy to add to Chorus. Here's a demo:
 
-### How to Integrate Custom Tools 
+<video src="https://meltylabs.fly.storage.tigris.dev/ChorusMCP.mp4" controls alt="Add Custom MCP" />
+
+Select the `Add Custom MCP` button in the tools picker or go to `Settings` -> `Connections` to manage your MCPs.
 
 You can also add a custom **local** or **remote** MCP to Chorus by clicking `Add Remote MCP` or `Add Local MCP` in settings. 
 
@@ -53,4 +74,9 @@ Once you follow the on-screen prompts, you'll be able to run your custom MCP.
     You can find the `mcp-remote` binary in the `mcp-remote` directory of your Chorus installation. 
 </Note>
 
-TODO: gif 
+
+## Import MCPs from Claude Desktop
+
+Chorus can import MCPs from Claude Desktop in 1 click.
+
+Go to `Settings` -> `Connections` and click `Import from Claude Desktop`.
