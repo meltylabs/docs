@@ -1,88 +1,78 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
-  "name": "Chorus Docs",
-  "colors": {
-    "primary": "#ca8a04",
-    "light": "#ca8a04",
-    "dark": "#ca8a04"
-  },
-  "favicon": "/favicon.png",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "index",
-              "installation",
-              "basics"
-            ]
-          },
-          {
-            "group": "Core Features",
-            "pages": [
-              "core/multiple-models",
-              "core/tools",
-              "core/projects",
-              "core/ambient-chat",
-              "core/local"
-            ]
-          },
-          {
-            "group": "How-to Guides",
-            "pages": [
-              "use-cases/managing-context",
-              "use-cases/sharing-context",
-              "use-cases/sharing-screen",
-              "use-cases/import"
-            ]
-          },
-          {
-            "group": "Settings",
-            "pages": [
-              "settings/byok"
-            ]
-          },
-          {
-            "group": "Account",
-            "pages": [
-              "account/dashboard",
-              "account/privacy"
-            ]
-          }
+    "$schema": "https://mintlify.com/docs.json",
+    "theme": "willow",
+    "name": "Chorus Docs",
+    "colors": {
+        "primary": "#ca8a04",
+        "light": "#ca8a04",
+        "dark": "#ca8a04"
+    },
+    "favicon": "/favicon.png",
+    "navigation": {
+        "tabs": [
+            {
+                "tab": "Guides",
+                "groups": [
+                    {
+                        "group": "Get Started",
+                        "pages": ["index", "installation", "first-chat"]
+                    },
+                    {
+                        "group": "Core Features",
+                        "pages": [
+                            "core/multiple-models",
+                            "core/tools",
+                            "core/projects",
+                            "core/ambient-chat",
+                            "core/local"
+                        ]
+                    },
+                    {
+                        "group": "How-to Guides",
+                        "pages": [
+                            "use-cases/managing-context",
+                            "use-cases/sharing-context",
+                            "use-cases/sharing-screen",
+                            "use-cases/import"
+                        ]
+                    },
+                    {
+                        "group": "Settings",
+                        "pages": ["settings/byok"]
+                    },
+                    {
+                        "group": "Account",
+                        "pages": ["account/dashboard", "account/privacy"]
+                    }
+                ]
+            }
         ]
-      }
-     
-    ]
-  },
-  "logo": {
-    "light": "/logo/chorus.png",
-    "dark": "/logo/chorus.png"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:founders@chorus.sh"
-      },
-      {
-        "label": "Community",
-        "href": "https://discord.gg/kTWpb6JBvM"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Download",
-      "href": "https://app.chorus.sh"
+    },
+    "logo": {
+        "light": "/logo/chorus.png",
+        "dark": "/logo/chorus.png"
+    },
+    "navbar": {
+        "links": [
+            {
+                "label": "Support",
+                "href": "mailto:founders@chorus.sh"
+            },
+            {
+                "label": "Community",
+                "href": "https://discord.gg/kTWpb6JBvM"
+            }
+        ],
+        "primary": {
+            "type": "button",
+            "label": "Download",
+            "href": "https://app.chorus.sh"
+        }
+    },
+    "footer": {
+        "socials": {
+            "website": "https://chorus.sh",
+            "x": "https://x.com/meltyinc"
+        }
     }
-  },
-  "footer": {
-    "socials": {
-      "website": "https://chorus.sh",
-      "x": "https://x.com/meltyinc"
-    }
-  }
 }
