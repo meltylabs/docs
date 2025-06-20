@@ -28,8 +28,16 @@
               "core/tools",
               "core/projects",
               "core/ambient-chat",
-              "core/local",
-              "core/import"
+              "core/local"
+            ]
+          },
+          {
+            "group": "How-to Guides",
+            "pages": [
+              "use-cases/managing-context",
+              "use-cases/sharing-context",
+              "use-cases/sharing-screen",
+              "use-cases/import"
             ]
           },
           {
@@ -48,26 +56,7 @@
         ]
       }
      
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Website",
-          "href": "https://chorus.sh",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://discord.gg/kTWpb6JBvM",
-          "icon": "discord"
-        },
-        {
-          "anchor": "Support",
-          "href": "mailto:founders@chorus.sh",
-          "icon": "envelope"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/chorus.png",
@@ -78,6 +67,10 @@
       {
         "label": "Support",
         "href": "mailto:founders@chorus.sh"
+      },
+      {
+        "label": "Community",
+        "href": "https://discord.gg/kTWpb6JBvM"
       }
     ],
     "primary": {

@@ -1,0 +1,33 @@
+---
+title: 'How to Manage your Context Window'
+description: 'Control what (and how much) the AI sees in Chorus'
+icon: 'paper'
+---
+
+Most LLMs have their own unique **context window length** that describes the maximum number of tokens it can handle before it decides to give up and throw you a nasty, poorly-worded error. 
+
+When we talk about **context**, we're specifically referring to everything the LLM is given. Whenever you send a message in a traditional chat app, the LLM can see all previous messages that were sent, meaning if your conversation gets too long, you'll run out of context. 
+
+It's critical that you don't exceed this window, otherwise your conversation is over. Thankfully, Chorus provides several handy features to manage what's in the context. 
+
+## Managing what's "In Chat" 
+
+One of Chorus' core features is the ability to talk to [multiple models](../core/multiple-models) at once. 
+
+You might worry that this would quickly overflow the context limit for smaller models. 
+
+In Chorus, only one AI message is kept in the chat history for each turn of the conversation. This is the message marked as "In Chat". Not only does this keep the context of your chat smaller, it creates an easy linear history for the LLMs to understand. 
+
+To control what's "In Chat", simply click on a message to keep it. 
+
+TODO: img 
+
+## Summarizing and Starting a New Chat 
+
+If one of your models does run out of context length in Chorus, you'll be presented with a helpful error message indicating so. If you press the `Summarize and Start New Chat` button, it will: 
+
+- Summarize and transcribe your current chat 
+- Create a new chat, attaching the transcription as a markdown file 
+- Queue up your message that the AI was originally unable to respond to 
+
+TODO: img 
