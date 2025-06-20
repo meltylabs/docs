@@ -7,6 +7,7 @@
 -   Avoid abstract nouns ("You might use a project for" rather than "Some example use cases of projects are")
 -   Prefer "Press X" or "Try pressing X" to "Let's press X"
 -   Use "Chorus's" as a possessive (e.g., "Chorus's UI")
+-   Top-level sections on a page should use the `##` heading level
 
 ## Standard terms
 
