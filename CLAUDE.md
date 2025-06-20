@@ -5,6 +5,7 @@
 -   To keep section headings short, don't use "How to" (e.g., "Managing your context window" rather than "How to manage your context window")
 -   Prefer simple language
 -   Avoid abstract nouns ("You might use a project for" rather than "Some example use cases of projects are")
+-   Avoid abstract taglines like "learn more about X" - always prefer a concise call to action
 -   Prefer "Press X" or "Try pressing X" to "Let's press X"
 -   Use "Chorus's" as a possessive (e.g., "Chorus's UI")
 -   Top-level sections on a page should use the `##` heading level
