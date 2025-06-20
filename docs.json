@@ -23,7 +23,6 @@
                             "core/multiple-models",
                             "core/projects",
                             "core/tools",
-                            "core/mcp",
                             "core/ambient-chat",
                             "core/local"
                         ]
