@@ -24,7 +24,8 @@
                             "core/projects",
                             "core/tools",
                             "core/ambient-chat",
-                            "core/local"
+                            "core/local",
+                            "core/staff-picks"
                         ]
                     },
                     {
