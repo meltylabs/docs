@@ -4,4 +4,33 @@ description: 'Run Ollama and LMStudio models on Chorus'
 icon: 'lock'
 ---
 
-TODO
+<img src="/images/local-light.png" alt="Local models" className='block dark:hidden' />
+<img src="/images/local-dark.png" alt="Local models" className="hidden dark:block" />
+
+Chorus supports local models running via Ollama or LMStudio.
+
+## Ollama
+
+First, set up [Ollama](https://ollama.com). Then run it:
+
+```bash Run Ollama
+ollama serve
+```
+
+Next, open the model picker (<kbd>⌘</kbd> + <kbd>J</kbd>) and scroll to the `LOCAL` section. You may need to click the <Icon icon="arrows-rotate"/> refresh icon.
+
+## LMStudio
+
+Download [LMStudio](https://lmstudio.ai) and load your first model.
+
+Next, go to the developer tab and start the LMStudio server. Make sure that CORS is enabled:
+
+<img src="/images/lmstudio-light.png" alt="Local models" className='block dark:hidden' />
+<img src="/images/lmstudio-dark.png" alt="Local models" className="hidden dark:block" />
+
+Next, open the model picker (<kbd>⌘</kbd> + <kbd>J</kbd>) and scroll to the `LOCAL` section. You may need to click the <Icon icon="arrows-rotate"/> refresh icon.
+
+
+### Base URL
+
+To change the LMStudio base URL, go to `Settings` -> `API KEYS` -> Open the LMStudio settings at the bottom of the tab.

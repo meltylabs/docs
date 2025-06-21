@@ -4,23 +4,20 @@ description: "Share information across chats"
 icon: "folder-open"
 ---
 
-<img src="/images/project-empty.png" alt="Projects" />
+<img src="/images/project-home-light.png" alt="Projects" className="dark:hidden" />
+<img src="/images/project-home-dark.png" alt="Projects" className="hidden dark:block" />
 
 Projects help you share information across chats. You might use a project for
 
 -   Financial planning
 -   Learning a language
 -   Designing a product
-
-There are two ways to share information in a project:
-
-**Context** - Anything you put in the `Context` field of your project page will automatically be added to each chat in the project.
-For example, in a financial planning project, you might add your tax returns to the project context so that they're visible to all chats.
-
-**Project Memory** - If you enable project memory, Chorus will automatically extract key information from each chat in the project to share with all the other chats.
-For example, when you have project memory enabled, if you add your tax returns to one chat, when you start a new chat, Chorus will automatically remember the key parts.
+-   Health advice
 
 ## Creating a project
+
+<img src="/images/new-project-light.png" alt="Projects" className="dark:hidden" />
+<img src="/images/new-project-dark.png" alt="Projects" className="hidden dark:block" />
 
 To create a project in Chorus, press <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> or click the "New Project" button in the sidebar.
 
@@ -28,7 +25,26 @@ First, give your project a title. This is for your own reference.
 
 Fill out the `Context` field. Anything you write here will be automatically added to each chat in your project. You can also drag in PDFS, images, or text files, or paste links.
 
+Here's an example of a `Context` field that we use at Chorus:
+
+```text Project Context Example
+You are a pair programmer working helping with app, Chorus. Please use the terminal tool to read my files alongside me. My codebase is in ~/Developer/melty/chorus. 
+
+It's built in Tauri 2.0 and Typescript. The API is an Elixir Phoenix app and it's in ~/Develper/melty/api.
+
+Please ask technical questions about my architecture, database queries, and infrastructure to diagnose any issues.
+```
+
+
 If you want chats to automatically share information with each other, turn on project memory.
+
+## Memory
+
+Project memory is a feature that allows you to share information across chats in a project. When you enable project memory, Chorus will automatically extract key information from each chat in the project to share with all the other chats.
+
+<img src="/images/memory-light.png" alt="Projects" className="dark:hidden max-w-xs" />
+<img src="/images/memory-dark.png" alt="Projects" className="hidden dark:block max-w-xs" />
+
 
 ## Starting a chat
 
@@ -40,8 +56,17 @@ To move a chat into a project, just drag it in:
 
 <img src="/images/drag.gif" alt="Drag and Drop" />
 
+You can also click the `Move to` button in the top right of a chat.
+
+<img src="/images/moveto-light.png" alt="Projects" className="dark:hidden" />
+<img src="/images/moveto-dark.png" alt="Projects" className="hidden dark:block" />
+
+## Deleting a project
+
+Delete a project by going to the project overview page and clicking the <Icon icon="trash"/> Trash icon in the top right.
+
 ## Example
 
 Here's a short video on how we use projects at Chorus:
 
-TODO: video
+<video src="https://meltylabs.fly.storage.tigris.dev/ProjectDemo.mp4" controls />
