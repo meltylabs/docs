@@ -25,7 +25,7 @@
                             "core/tools",
                             "core/ambient-chat",
                             "core/local",
-                            "core/replies",
+                            "core/threads",
                             "core/recommended-models"
                         ]
                     },
