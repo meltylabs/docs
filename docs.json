@@ -26,6 +26,7 @@
                             "core/ambient-chat",
                             "core/local",
                             "core/threads",
+                            "core/navigation",
                             "core/recommended-models"
                         ]
                     },
